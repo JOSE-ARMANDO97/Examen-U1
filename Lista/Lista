@@ -1,0 +1,103 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Lista {
+    Scanner E =new Scanner(System.in);
+    int numero;
+     List  Lista=new ArrayList();
+    
+    
+     protected String respuesta,palabra,Op;
+   private int posicion[],posicion2[],posicion3[];
+ //private  double num1[];
+   // private double num2;
+   // private double num3;
+    private  double suma;
+    private  double resta;
+    private   double mult;
+    private    double division;
+   
+
+      
+   public int getllenardatos(){
+   
+   for(int i=1;i<10;i++){
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       System.out.println("Digitame los numeros");
+       int Numeros=E.nextInt();
+  Lista.add(Numeros);
+       System.out.println();
+   }
+        return 0;
+   }
+   
+   public final double getSuma(){
+          for(int i=1;i<10;i++){
+          System.out.println("**************QUE POSICION DE SEAS Sumar ***********");
+       posicion[i]=Integer.parseInt(JOptionPane.showInputDialog(null,"INGRESE  POSICION"));
+      posicion2[i]=Integer.parseInt(JOptionPane.showInputDialog("INGRESE PALABRA O NUMERO"));
+    posicion3[i]=Integer.parseInt(JOptionPane.showInputDialog(null,"INGRESE  POSICION"));
+          suma=posicion[i]+posicion2[i]+posicion3[i];
+          }
+   
+          
+          return suma;     
+  }
+   public final double getResta(){
+        
+   for(int i=1;i<10;i++){
+          System.out.println("**************QUE POSICION DE SEAS Sumar ***********");
+       posicion[i]=Integer.parseInt(JOptionPane.showInputDialog(null,"INGRESE  POSICION"));
+      posicion2[i]=Integer.parseInt(JOptionPane.showInputDialog("INGRESE PALABRA O NUMERO"));
+    posicion3[i]=Integer.parseInt(JOptionPane.showInputDialog(null,"INGRESE  POSICION"));
+          resta=posicion[i]-posicion2[i]-posicion3[i];
+          }
+   
+          
+          return resta;     
+  }
+
+  
+   public final double getMult(){
+      for(int i=1;i<10;i++){
+          System.out.println("**************QUE POSICION DE SEAS Sumar ***********");
+       posicion[i]=Integer.parseInt(JOptionPane.showInputDialog(null,"INGRESE  POSICION"));
+      posicion2[i]=Integer.parseInt(JOptionPane.showInputDialog("INGRESE PALABRA O NUMERO"));
+          resta=posicion[i]*posicion2[i];
+      }  
+      return mult;
+      
+   }
+      public final double getDivision(){
+         
+          for(int i=1;i<10;i++){
+          System.out.println("**************QUE POSICION DE SEAS Sumar ***********");
+       posicion[i]=Integer.parseInt(JOptionPane.showInputDialog(null,"INGRESE  POSICION"));
+      posicion2[i]=Integer.parseInt(JOptionPane.showInputDialog("INGRESE PALABRA O NUMERO"));
+          division=posicion[i]/posicion2[i];
+          if((posicion[i]==0)&&(posicion2[i]>0)){
+              System.out.println("ERROR INTENTA DIVIDIR ENTRE CERO");
+          }else if((posicion[i]>0)&&(posicion2[i]==0)){
+              System.out.println("ERROR INTENTA DIVIDIR ENTRE CERO");
+          }
+      }  
+          
+    
+     
+        return division;
+      }
+   }
+
+      
+     
